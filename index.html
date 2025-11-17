@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caseificio Pugliese SRL - Tradizione dal 1975</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 6; color: #333; background-color: #f9f9f9; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { display: flex; align-items: center; }
+        .logo h1 { font-size: 8rem; color: #8B4513; margin-left: 10px; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+        nav ul li a:hover { color: #8B4513; }
+        
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
+        .hero h2 { font-size: 5rem; margin-bottom: 20px; }
+        .hero p { font-size: 2rem; max-width: 700px; margin: 0 auto 30px; }
+        .btn { display: inline-block; background-color: #8B4513; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+        .btn:hover { background-color: #654321; }
+        
+        section { padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; position: relative; }
+        .section-title h2 { font-size: 2.2rem; color: #8B4513; display: inline-block; padding-bottom: 10px; }
+        .section-title h2:after { content: ''; position: absolute; width: 70px; height: 3px; background-color: #8B4513; bottom: 0; left: 50%; transform: translateX(-50%); }
+        
+        .prodotti-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+        .prodotto-card { background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .prodotto-card:hover { transform: translateY(-10px); }
+        .prodotto-img { height: 200px; background-color: #f0d9b5; display: flex; align-items: center; justify-content: center; color: #8B4513; }
+        .prodotto-info { padding: 20px; }
+        .prodotto-info h3 { margin-bottom: 10px; color: #8B4513; }
+        
+        footer { background-color: #333; color: white; padding: 50px 0 20px; }
+        .footer-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 30px; }
+        .footer-col { flex: 1; min-width: 250px; }
+        .footer-col h3 { margin-bottom: 20px; color: #f0d9b5; }
+        .social-links { display: flex; gap: 15px; margin-top: 15px; }
+        .social-links a { display: inline-block; width: 40px; height: 40px; background-color: #555; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background-color 0.3s; }
+        .social-links a:hover { background-color: #8B4513; }
+        
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; }
+            nav ul { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div style="width:60px;height:60px;background:#f0d9b5;border-radius:50%;display:flex;align-items:center;justify-content:center;">🧀</div>
+                <h1>Caseificio Pugliese</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#storia">Storia</a></li>
+                    <li><a href="#prodotti">Prodotti</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Caseificio Pugliese SRL</h2>
+            <p>Tradizione, artigianalità e qualità delle materie prime 100% italiane.</p>
+            <a href="#prodotti" class="btn">Scopri i Prodotti</a>
+        </div>
+    </section>
+
+    <section id="storia">
+        <div class="container">
+            <div class="section-title">
+                <h2>La Nostra Storia</h2>
+            </div>
+            <div style="text-align:center;max-width:800px;margin:0 auto;">
+                <p>Il Caseificio Pugliese SRL nasce dalla tradizione della famiglia Cusmai.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prodotti">
+        <div class="container">
+            <div class="section-title">
+                <h2>I Nostri Prodotti</h2>
+            </div>
+            <div class="prodotti-grid">
+                <div class="prodotto-card">
+                    <div class="prodotto-img"><i class="fas fa-cheese fa-3x"></i></div>
+                    <div class="prodotto-info">
+                        <h3>Mozzarella Fior di Latte</h3>
+                        <p>Lavorata artigianalmente con latte italiano di altissima qualità.</p>
+                    </div>
+                </div>
+                <div class="prodotto-card">
+                    <div class="prodotto-img"><i class="fas fa-egg fa-3x"></i></div>
+                    <div class="prodotto-info">
+                        <h3>Burrata e Burratina</h3>
+                        <p>La cremosità della stracciatella avvolta in una pasta filante.</p>
+                    </div>
+                </div>
+                <div class="prodotto-card">
+                    <div class="prodotto-img"><i class="fas fa-fire fa-3x"></i></div>
+                    <div class="prodotto-info">
+                        <h3>Scamorza Affumicata</h3>
+                        <p>Formaggio a pasta filante dal sapore delicato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatti">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contatti</h2>
+            </div>
+            <div style="text-align:center;">
+                <p><strong>Indirizzo:</strong> Via Salvatore Di Giacomo, 4, San Benedetto del Tronto</p>
+                <p><strong>Telefono:</strong> 0735/369006</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Contatti</h3>
+                    <p>Via Salvatore Di Giacomo, 4</p>
+                <p>63074 San Benedetto del Tronto (AP)</p>
+                <p>Tel: 0735/369006</p>
+            </div>
+            <div style="text-align:center;padding-top:20px;border-top:1px solid #555;">
+                <p>&copy; 2024 Caseificio Pugliese SRL</p>
+            </div>
+        </footer>
+</body>
+</html>
